@@ -5,12 +5,12 @@ const sass = require('gulp-sass')
 
 // Standard
 gulp.task('standard', function () {
-  return gulp.src(['./index.js'])
+  return gulp.src(['./gulpfile.js'])
     .pipe(standard())
     .pipe(standard.reporter('default', {
       breakOnError: true,
       quiet: true
-    }))
+    }));
 })
 
 // Compile Sass & Inject Into Browser
@@ -25,7 +25,7 @@ gulp.task('sass', function() {
 gulp.task('js', function() {
     return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js','node_modules/popper.js/dist/umd/popper.min.js'])
         .pipe(gulp.dest("src/js"))
-        .pipe(browserSync.stream());
+        .pipe(browserSync.stream())
 });
 
 // Watch Sass & Serve
@@ -51,4 +51,4 @@ gulp.task('fa', function() {
     .pipe(gulp.dest('src/css'))
 })
 
-gulp.task('default', ['js','serve', 'fa', 'fonts']);
+gulp.task('default', ['js','serve', 'fa', 'fonts'])

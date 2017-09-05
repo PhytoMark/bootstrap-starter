@@ -1,4 +1,5 @@
 # Bootstrap starter pack with Gulp
+Tested with Bootstrap 4.0.0-beta and SASS
 
 ## Stadard
 I use stadard.js and sass for my starter project
