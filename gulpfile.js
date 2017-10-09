@@ -1,21 +1,10 @@
-const gulp = require('gulp')
-const standard = require('gulp-standard')
-const browserSync = require('browser-sync').create()
-const sass = require('gulp-sass')
-
-// Standard
-gulp.task('standard', function () {
-  return gulp.src(['./gulpfile.js'])
-    .pipe(standard())
-    .pipe(standard.reporter('default', {
-      breakOnError: true,
-      quiet: true
-    }));
-})
+const gulp        = require('gulp');
+const browserSync = require('browser-sync').create();
+const sass        = require('gulp-sass');
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
-    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.sass'])
+    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
         .pipe(sass())
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
@@ -25,7 +14,7 @@ gulp.task('sass', function() {
 gulp.task('js', function() {
     return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js','node_modules/popper.js/dist/umd/popper.min.js'])
         .pipe(gulp.dest("src/js"))
-        .pipe(browserSync.stream())
+        .pipe(browserSync.stream());
 });
 
 // Watch Sass & Serve
@@ -35,7 +24,7 @@ gulp.task('serve', ['sass'], function() {
         server: "./src"  
     });
 
-    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.sass'], ['sass']);
+    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
@@ -51,4 +40,4 @@ gulp.task('fa', function() {
     .pipe(gulp.dest('src/css'))
 })
 
-gulp.task('default', ['js','serve', 'fa', 'fonts'])
+gulp.task('default', ['js','serve', 'fa', 'fonts']);
