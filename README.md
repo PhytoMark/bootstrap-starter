@@ -1,10 +1,14 @@
 # Bootstrap starter pack with Gulp
-Tested with Bootstrap 4.0.0-beta-2 and sass
+Powered by: 
+![phytomark](phytomark.png)
+
+Bootstrap 4.0.0-beta-2 and sass
 
 ## Include in the box
 - Gulp task runner with browsersync
 - Scss compiler
-- Bootstrap and Font Awesome
+- Bootstrap (4.0.0-beta-2) and Font Awesome (4.7.0)
+- Bourbon (4.3.4)
 
 ## Installation
 To install simply just clone with `git clone`

@@ -1,4 +1,6 @@
 node_modules
-yarn.lock
-package-lock.json
+src/css
+src/fonts
+src/js/*.min.js
 
+.DS_Store
