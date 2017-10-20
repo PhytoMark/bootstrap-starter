@@ -1,8 +1,14 @@
 # Bootstrap starter pack with Gulp
 Powered by: 
-![phytomark](phytomark.png)
 
-Bootstrap 4.0.0-beta-2 and sass
+[![phytomark](phytomark.png)](https://github.com/PhytoMark)
+
+Stater pack for Bootstrap 4.0.0-beta-2 and sass
+
+## ToDo
+- Add Progressive Web App Approach: 
+    - manifest.json
+    - service worker
 
 ## Include in the box
 - Gulp task runner with browsersync
