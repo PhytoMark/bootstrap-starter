@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Bootstrap 4 starter pack with Gulp</title>
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,9 +13,23 @@
     <h1>Welcome!</h1>
   </div>
   
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>
+  if (typeof jQuery == 'undefined') {
+      document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script>
+    if(typeof($.fn.modal) === 'undefined') {
+      document.write(unescape("%3Cscript src='js/popper.min.js' type='text/javascript'%3E%3C/script%3E"));
+      document.write(unescape("%3Cscript src='js/bootstrap.min.js' type='text/javascript'%3E%3C/script%3E"));
+      document.write(unescape("%3Clink href='css/bootstrap.css' rel='stylesheet'%3E"));
+      document.write(unescape("%3Clink href='css/font-awesome.min.css' rel='stylesheet'%3E"));
+    }
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>
