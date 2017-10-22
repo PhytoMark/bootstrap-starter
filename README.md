@@ -8,6 +8,9 @@ Powered by:
 
 Stater pack for Bootstrap 4.0.0-beta-2 and sass (scss to be exact)
 
+## Version Available
+- [Bootstrap v4.0.0beta-2](https://github.com/phytomark/bootstrap-starter/tree/4.0.0beta-2)
+
 ## ToDo
 - Add CDN fallback for CSS
 - Add Progressive Web App Approach: 
