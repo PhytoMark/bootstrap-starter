@@ -6,12 +6,15 @@ Powered by:
 
 [![phytomark](phytomark.png)](https://github.com/PhytoMark)
 
-Stater pack for Bootstrap 4.0.0-beta-2 and sass
+Stater pack for Bootstrap 4.0.0-beta-2 and sass (scss to be exact)
 
 ## ToDo
+- Add CDN fallback for CSS
 - Add Progressive Web App Approach: 
     - manifest.json
     - service worker
+- Add Modification for scss/sass/css
+- Add Modification for TypeScript and CoffeScript
 
 ## Include in the box
 - Gulp task runner with browsersync
