@@ -1,4 +1,7 @@
 # Bootstrap starter pack with Gulp
+[![first-timers-only](http://img.shields.io/badge/first--timers--only-friendly-blue.svg)](http://www.firsttimersonly.com/)
+
+
 Powered by: 
 
 [![phytomark](phytomark.png)](https://github.com/PhytoMark)
